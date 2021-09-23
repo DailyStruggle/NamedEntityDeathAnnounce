@@ -37,7 +37,7 @@ public final class NamedEntityDeathAnnounce extends JavaPlugin {
         @EventHandler(priority = EventPriority.LOW)
         public void onEntityDeath(EntityDeathEvent event){
             if(event.getEntity() instanceof Player) return;
-            if(event.getEntityType().name().equals(event.getEntity().getName().toUpperCase())) return;
+            if(event.getEntity().getCustomName() == null) return;
             Location location = event.getEntity().getLocation();
             Bukkit.getScheduler().runTaskAsynchronously(instance,() -> {
                 String msg = ChatColor.of("#A020F0") + "[server] named entity " + event.getEntity().getName() + " has died";
