@@ -1,0 +1,12 @@
+name: NamedEntityDeathAnnounce
+version: '${project.version}'
+main: io.github.dailystruggle.namedentitydeathannounce.NamedEntityDeathAnnounce
+api-version: 1.17
+authors: [ leaf26 ]
+description: announce if a named entity dies
+website: https://github.com/DailyStruggle
+
+permissions:
+  NamedEntityDeathAnnounce.view:
+    description: "see when a named entity dies"
+    default: op
