@@ -1,3 +1,3 @@
 # NamedEntityDeathAnnounce
 
-example plugin for announcing entity deaths, intended to be reworked/updated.
+example plugin for announcing named entity deaths, intended to be reworked/updated.
